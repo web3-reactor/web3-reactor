@@ -7,7 +7,14 @@
 本项目是一个基于Python的异步web3信息处理套件，内置集成一些常用的区块链基础功能。旨在收集，处理，响应区块链上的所有
 Transaction 或 Event。
 
+## 定制开发
+
+需要帮助，需要更深度的定制开发，欢迎联系我。  
+e-mail: [majoson@qq.com](mailto:majoson@qq.com?subject=web3_reactor-support)
+
 ## 用途
+
+包括但不限于
 
 - NFT抢购
 - ERC20抢购
@@ -81,4 +88,8 @@ pip install web3-reactor
 ### 使用
 
 详见 [example](./example)
+
+## 救救孩子吧
+
+![coffee_alipay.jpg](assert/coffee_alipay.jpg)
 
