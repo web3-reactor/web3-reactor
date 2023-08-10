@@ -1,0 +1,6 @@
+loguru~=0.7.0
+web3~=6.8.0
+PyYAML~=6.0.1
+Werkzeug~=2.3.6
+httpx~=0.24.1
+websockets~=11.0.3
