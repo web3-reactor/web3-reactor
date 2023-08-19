@@ -22,7 +22,7 @@ ChannelPublisherType = t.Callable[..., t.AsyncGenerator[t.Dict, t.Any]]
 
 
 class PublisherConfig(t.TypedDict):
-    name: t.LiteralString
+    name: "t.LiteralString"
     # handler: t.NotRequired[ChannelPublisherType]
     # t.NotRequired need py >= 3.11
 

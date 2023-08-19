@@ -20,7 +20,7 @@ class Channel:
     Create a channel.
     """
     uuid: UUID
-    name: t.LiteralString
+    name: "t.LiteralString"
 
     on_session_start: "Event"
     on_session_end: "Event"
@@ -34,7 +34,7 @@ class Channel:
 
     def __init__(
             self,
-            name: t.LiteralString,
+            name: "t.LiteralString",
             parent: t.Optional["Channel"] = None,
     ):
         """
