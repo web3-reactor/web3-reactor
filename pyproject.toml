@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "web3-reactor"
-version = "0.1.0"
+version = "0.1.1"
 description = "A blockchain event processing suite based on python asyncio"
 authors = ["majoson-chen"]
 license = "MIT"

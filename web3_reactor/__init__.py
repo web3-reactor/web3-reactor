@@ -5,4 +5,4 @@ Asyncio Base Reactor for Web3，used to collect, process and react the data from
 """
 from .exports import *
 
-version = "0.1.0"
+version = "0.1.1"
