@@ -58,7 +58,7 @@ class Channel:
         if parent:
             parent._add_child_channel(self)
 
-    def add_publisher(self, config: "PublisherConfig"):
+    def add_publisher(self, config: "PublisherConfig", publisher: "ChannelPublisherType" = None):
         """
         Add a publisher to the channel.
         """
@@ -74,6 +74,9 @@ class Channel:
 
             self._publishers.append(config)
             return publisher
+
+        if publisher:
+            return _(publisher)
 
         return _
 
@@ -195,8 +198,9 @@ class Channel:
 
         while True:
             try:
+
                 # loop to got message
-                data = await anext(generator)
+                data = await generator.__anext__()
                 if not isinstance(data, dict):
                     raise TypeError(f"Publisher must yield a dict, but got {type(data)}")
 
@@ -207,8 +211,10 @@ class Channel:
             except PublisherExitError:
                 # Publisher exit.
                 logger.success(f"Publisher {self.name}:{config['name']} exit.")
+                break
             except StopAsyncIteration:
                 logger.success(f"Publisher {self.name}:{config['name']} exit.")
+                break
             except Exception as e:
                 # Publisher error.
                 logger.error(f"an error occurred when publisher {self.name}:{config['name']} processing: {e}")

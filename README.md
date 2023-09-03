@@ -52,13 +52,14 @@ e-mail: [majoson@qq.com](mailto:majoson@qq.com?subject=web3_reactor-support)
 ### TODO
 
 - [ ] `msg-context` to lock
+- [ ] `prevent()`, `stop()`, `jump()` method
 - [ ] config format&type check support
 - [ ] config .env support
 - [ ] etherscan API to module
 - [ ] alchemy API to module
 - [ ] web3 toolkit (pro edition)
 - [ ] 常用合约内置
-- [ ] background task api (multi-process)
+- [ ] background task api (multi-process)(task-limit)
 - [ ] database toolkit
   - [ ] sqlalchemy types
   - [ ] sqlalchemy models
